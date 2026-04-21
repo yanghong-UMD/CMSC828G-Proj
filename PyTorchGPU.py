@@ -7,6 +7,7 @@ import torch.nn as nn
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+from torch.utils.data import TensorDataset, DataLoader
 
 SEED = 42
 N_ROUNDS = 10
@@ -64,6 +65,10 @@ def process(csv_path):
         # train & val
         X_train, X_val, y_train, y_val = train_test_split(X_tr, y_tr, test_size=0.1, random_state=seed)
 
+        # Seperate Data in batches
+        train_dataset = TensorDataset(X_train, y_train)
+        train_loader = DataLoader(train_dataset, batch_size=2) # NOTE Change this
+
         model = MLP(p, hidden_sizes=(128, 64)).to(DEVICE)
 
         optimizer = torch.optim.Adam(model.parameters(), lr=LR)
@@ -78,12 +83,16 @@ def process(csv_path):
         # 核心训练循环
         for epoch in range(MAX_EPOCHS):
             model.train()
-            optimizer.zero_grad(set_to_none=True)
+
+            for batch_X, batch_y in train_loader:
+                optimizer.zero_grad(set_to_none=True)
+                pred = model(batch_X)
+                loss = loss_fn(pred, batch_y)
+                loss.backward()
+                optimizer.step()
             
             pred = model(X_train)
             loss = loss_fn(pred, y_train)
-            loss.backward()
-            optimizer.step()
 
             #early stopping
             if epoch % 5 == 0:
