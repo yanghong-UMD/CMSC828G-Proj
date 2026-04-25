@@ -1,4 +1,5 @@
 import time
+import argparse
 import numpy as np
 import pandas as pd
 import os, glob
@@ -36,7 +37,7 @@ def adj_r2(y_true, y_pred, p):
     r2 = r2_score(y_true, y_pred)
     return 1 - (1 - r2) * (n - 1) / max(n - p - 1, 1)
 
-def process(csv_path):
+def process(csv_path, batch_size):
     df = pd.read_csv(csv_path)
     X_raw = df.drop(columns="y").values.astype(np.float32)
     y_raw = df["y"].values.astype(np.float32)
@@ -73,7 +74,7 @@ def process(csv_path):
         
         # Seperate data into batches
         train_dataset = TensorDataset(X_train, y_train)
-        train_loader = DataLoader(train_dataset, batch_size=2)   # NOTE Change this
+        train_loader = DataLoader(train_dataset, batch_size=batch_size)   # NOTE Change this
 
         for epoch in range(MAX_EPOCHS):
             model.train()
@@ -124,6 +125,14 @@ def process(csv_path):
     return rows
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Train PyTorch MLP Regressor")
+    parser.add_argument(
+        "--batch_size", 
+        type=int, 
+    )
+    args = parser.parse_args()
+    print(f"Running with batch size: {args.batch_size}")
+
     datasets = sorted(glob.glob(os.path.join(DATA_ROOT, "*/data.csv")))
     if not datasets:
         raise FileNotFoundError(f"no data found under {DATA_ROOT}/")
@@ -131,7 +140,7 @@ if __name__ == "__main__":
     all_rows = []
     for path in datasets:
         print(f"\n=== {os.path.basename(os.path.dirname(path))} ===")
-        all_rows.extend(process(path))
+        all_rows.extend(process(path, args.batch_size))
 
-    pd.DataFrame(all_rows).to_csv("results_torch.csv", index=False)
+    pd.DataFrame(all_rows).to_csv(f"results_torch_{args.batch_size}.csv", index=False)
     print(f"\ndone. {len(all_rows)} rows -> results_torch.csv")

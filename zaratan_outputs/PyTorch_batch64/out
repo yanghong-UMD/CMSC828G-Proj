@@ -1,0 +1,218 @@
+
+=== feats10_snr10_N10000 ===
+  round 0  time=2.38s  R2=0.8848
+  round 1  time=2.47s  R2=0.8861
+  round 2  time=2.40s  R2=0.8846
+  round 3  time=1.53s  R2=0.8881
+  round 4  time=2.33s  R2=0.8769
+  round 5  time=1.54s  R2=0.8930
+  round 6  time=1.66s  R2=0.8932
+  round 7  time=2.02s  R2=0.8826
+  round 8  time=1.41s  R2=0.8813
+  round 9  time=2.10s  R2=0.8800
+
+=== feats10_snr10_N100000 ===
+  round 0  time=38.90s  R2=0.9062
+  round 1  time=29.17s  R2=0.9042
+  round 2  time=26.24s  R2=0.9037
+  round 3  time=14.03s  R2=0.8979
+  round 4  time=42.60s  R2=0.9056
+  round 5  time=30.46s  R2=0.9049
+  round 6  time=15.77s  R2=0.9043
+  round 7  time=24.84s  R2=0.9043
+  round 8  time=40.56s  R2=0.9002
+  round 9  time=39.42s  R2=0.9032
+
+=== feats10_snr10_N500000 ===
+  round 0  time=110.46s  R2=0.9054
+  round 1  time=99.86s  R2=0.9053
+  round 2  time=181.42s  R2=0.9070
+  round 3  time=274.33s  R2=0.9076
+  round 4  time=241.40s  R2=0.9076
+  round 5  time=90.26s  R2=0.9026
+  round 6  time=150.09s  R2=0.9068
+  round 7  time=487.68s  R2=0.9063
+  round 8  time=241.00s  R2=0.9073
+  round 9  time=251.18s  R2=0.9070
+
+=== feats10_snr3_N10000 ===
+  round 0  time=1.53s  R2=0.7152
+  round 1  time=1.65s  R2=0.6740
+  round 2  time=1.59s  R2=0.7069
+  round 3  time=1.34s  R2=0.7079
+  round 4  time=1.41s  R2=0.7122
+  round 5  time=1.65s  R2=0.7066
+  round 6  time=1.78s  R2=0.6992
+  round 7  time=1.57s  R2=0.7112
+  round 8  time=1.46s  R2=0.6942
+  round 9  time=1.59s  R2=0.7021
+
+=== feats10_snr3_N100000 ===
+  round 0  time=20.99s  R2=0.7423
+  round 1  time=25.56s  R2=0.7321
+  round 2  time=25.54s  R2=0.7407
+  round 3  time=17.84s  R2=0.7379
+  round 4  time=14.23s  R2=0.7368
+  round 5  time=18.42s  R2=0.7357
+  round 6  time=37.51s  R2=0.7390
+  round 7  time=19.60s  R2=0.7304
+  round 8  time=26.21s  R2=0.7403
+  round 9  time=14.88s  R2=0.7362
+
+=== feats10_snr3_N500000 ===
+  round 0  time=233.34s  R2=0.7458
+  round 1  time=138.61s  R2=0.7349
+  round 2  time=104.79s  R2=0.7456
+  round 3  time=142.12s  R2=0.7452
+  round 4  time=338.63s  R2=0.7474
+  round 5  time=297.23s  R2=0.7423
+  round 6  time=169.32s  R2=0.7455
+  round 7  time=242.02s  R2=0.7458
+  round 8  time=168.35s  R2=0.7449
+  round 9  time=310.85s  R2=0.7461
+
+=== feats20_snr10_N10000 ===
+  round 0  time=1.49s  R2=0.8635
+  round 1  time=1.61s  R2=0.8641
+  round 2  time=1.85s  R2=0.8662
+  round 3  time=1.44s  R2=0.8769
+  round 4  time=1.97s  R2=0.8601
+  round 5  time=1.52s  R2=0.8788
+  round 6  time=1.51s  R2=0.8744
+  round 7  time=1.46s  R2=0.8650
+  round 8  time=1.28s  R2=0.8722
+  round 9  time=2.10s  R2=0.8656
+
+=== feats20_snr10_N100000 ===
+  round 0  time=35.85s  R2=0.8946
+  round 1  time=19.07s  R2=0.8911
+  round 2  time=19.05s  R2=0.8949
+  round 3  time=18.50s  R2=0.8982
+  round 4  time=31.20s  R2=0.8919
+  round 5  time=22.54s  R2=0.8989
+  round 6  time=25.43s  R2=0.8973
+  round 7  time=25.42s  R2=0.8964
+  round 8  time=16.77s  R2=0.8996
+  round 9  time=23.15s  R2=0.8985
+
+=== feats20_snr10_N500000 ===
+  round 0  time=195.47s  R2=0.9042
+  round 1  time=171.21s  R2=0.9054
+  round 2  time=113.73s  R2=0.9042
+  round 3  time=283.07s  R2=0.9046
+  round 4  time=247.29s  R2=0.9015
+  round 5  time=237.74s  R2=0.9051
+  round 6  time=175.02s  R2=0.9047
+  round 7  time=197.86s  R2=0.9041
+  round 8  time=79.03s  R2=0.9016
+  round 9  time=198.65s  R2=0.9048
+
+=== feats20_snr3_N10000 ===
+  round 0  time=1.23s  R2=0.6731
+  round 1  time=1.58s  R2=0.6504
+  round 2  time=1.28s  R2=0.6304
+  round 3  time=1.46s  R2=0.6307
+  round 4  time=1.28s  R2=0.6750
+  round 5  time=1.28s  R2=0.6627
+  round 6  time=1.40s  R2=0.6669
+  round 7  time=1.22s  R2=0.6941
+  round 8  time=1.23s  R2=0.6552
+  round 9  time=1.52s  R2=0.6628
+
+=== feats20_snr3_N100000 ===
+  round 0  time=15.66s  R2=0.7300
+  round 1  time=15.05s  R2=0.7282
+  round 2  time=15.05s  R2=0.7302
+  round 3  time=15.06s  R2=0.7341
+  round 4  time=19.12s  R2=0.7311
+  round 5  time=16.81s  R2=0.7333
+  round 6  time=17.37s  R2=0.7293
+  round 7  time=14.47s  R2=0.7255
+  round 8  time=22.00s  R2=0.7295
+  round 9  time=17.98s  R2=0.7267
+
+=== feats20_snr3_N500000 ===
+  round 0  time=158.90s  R2=0.7434
+  round 1  time=113.89s  R2=0.7436
+  round 2  time=113.18s  R2=0.7414
+  round 3  time=133.84s  R2=0.7412
+  round 4  time=224.98s  R2=0.7426
+  round 5  time=181.42s  R2=0.7409
+  round 6  time=116.41s  R2=0.7422
+  round 7  time=123.29s  R2=0.7428
+  round 8  time=203.53s  R2=0.7423
+  round 9  time=209.83s  R2=0.7443
+
+=== feats5_snr10_N10000 ===
+  round 0  time=1.45s  R2=0.8905
+  round 1  time=1.28s  R2=0.9013
+  round 2  time=1.28s  R2=0.8944
+  round 3  time=1.22s  R2=0.8942
+  round 4  time=1.97s  R2=0.9007
+  round 5  time=2.32s  R2=0.9001
+  round 6  time=2.55s  R2=0.9088
+  round 7  time=1.45s  R2=0.8940
+  round 8  time=5.28s  R2=0.8947
+  round 9  time=2.27s  R2=0.8989
+
+=== feats5_snr10_N100000 ===
+  round 0  time=69.81s  R2=0.9054
+  round 1  time=13.85s  R2=0.9075
+  round 2  time=39.31s  R2=0.9083
+  round 3  time=20.22s  R2=0.9059
+  round 4  time=14.41s  R2=0.9036
+  round 5  time=17.89s  R2=0.9056
+  round 6  time=12.67s  R2=0.9063
+  round 7  time=18.46s  R2=0.9082
+  round 8  time=13.84s  R2=0.9077
+  round 9  time=30.56s  R2=0.9079
+
+=== feats5_snr10_N500000 ===
+  round 0  time=76.36s  R2=0.9085
+  round 1  time=112.48s  R2=0.9079
+  round 2  time=344.98s  R2=0.9086
+  round 3  time=136.16s  R2=0.9065
+  round 4  time=109.19s  R2=0.9062
+  round 5  time=234.81s  R2=0.9083
+  round 6  time=76.13s  R2=0.9074
+  round 7  time=182.03s  R2=0.9067
+  round 8  time=86.20s  R2=0.9074
+  round 9  time=139.19s  R2=0.9087
+
+=== feats5_snr3_N10000 ===
+  round 0  time=1.45s  R2=0.7241
+  round 1  time=1.51s  R2=0.7437
+  round 2  time=4.89s  R2=0.7317
+  round 3  time=1.74s  R2=0.7426
+  round 4  time=1.86s  R2=0.7360
+  round 5  time=3.95s  R2=0.7058
+  round 6  time=1.97s  R2=0.7372
+  round 7  time=1.63s  R2=0.7415
+  round 8  time=1.63s  R2=0.7322
+  round 9  time=2.79s  R2=0.7325
+
+=== feats5_snr3_N100000 ===
+  round 0  time=56.62s  R2=0.7499
+  round 1  time=38.06s  R2=0.7482
+  round 2  time=24.23s  R2=0.7442
+  round 3  time=20.19s  R2=0.7462
+  round 4  time=42.60s  R2=0.7434
+  round 5  time=24.20s  R2=0.7481
+  round 6  time=29.37s  R2=0.7437
+  round 7  time=41.52s  R2=0.7441
+  round 8  time=23.66s  R2=0.7461
+  round 9  time=36.90s  R2=0.7459
+
+=== feats5_snr3_N500000 ===
+  round 0  time=162.75s  R2=0.7437
+  round 1  time=189.12s  R2=0.7435
+  round 2  time=99.56s  R2=0.7486
+  round 3  time=182.06s  R2=0.7478
+  round 4  time=198.69s  R2=0.7471
+  round 5  time=142.23s  R2=0.7478
+  round 6  time=159.00s  R2=0.7469
+  round 7  time=73.19s  R2=0.7464
+  round 8  time=92.58s  R2=0.7460
+  round 9  time=89.45s  R2=0.7466
+
+done. 180 rows -> results_torch.csv
