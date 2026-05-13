@@ -1,0 +1,222 @@
+Loading python/3.10.10/gcc/11.3.0/cuda/12.3.0/linux-rhel8-zen2
+  Loading requirement: gcc/11.3.0
+Using device: cuda
+Running with batch size 128
+
+=== feats10_snr10_N10000 ===
+  round 0  time=2.0870s  R2=0.8737
+  round 1  time=1.9701s  R2=0.8852
+  round 2  time=1.9720s  R2=0.8802
+  round 3  time=1.7267s  R2=0.8707
+  round 4  time=1.7278s  R2=0.8697
+  round 5  time=1.7323s  R2=0.8437
+  round 6  time=1.7310s  R2=0.8736
+  round 7  time=1.7326s  R2=0.8659
+  round 8  time=1.7317s  R2=0.8762
+  round 9  time=1.9657s  R2=0.8730
+
+=== feats10_snr10_N100000 ===
+  round 0  time=16.9447s  R2=0.9037
+  round 1  time=21.6720s  R2=0.9033
+  round 2  time=26.2879s  R2=0.9009
+  round 3  time=26.3851s  R2=0.9006
+  round 4  time=33.4463s  R2=0.9050
+  round 5  time=21.6576s  R2=0.9031
+  round 6  time=21.6001s  R2=0.9038
+  round 7  time=26.3946s  R2=0.8997
+  round 8  time=26.3521s  R2=0.9016
+  round 9  time=26.3805s  R2=0.9027
+
+=== feats10_snr10_N500000 ===
+  round 0  time=284.5943s  R2=0.9073
+  round 1  time=179.0632s  R2=0.9068
+  round 2  time=179.4139s  R2=0.9078
+  round 3  time=402.3919s  R2=0.9077
+  round 4  time=273.0437s  R2=0.9077
+  round 5  time=308.4318s  R2=0.9075
+  round 6  time=120.2418s  R2=0.9076
+  round 7  time=273.5610s  R2=0.9076
+  round 8  time=131.0561s  R2=0.9075
+  round 9  time=270.6870s  R2=0.9061
+
+=== feats10_snr3_N10000 ===
+  round 0  time=1.7030s  R2=0.6340
+  round 1  time=1.7048s  R2=0.6099
+  round 2  time=1.7175s  R2=0.6445
+  round 3  time=1.4691s  R2=0.6844
+  round 4  time=1.7067s  R2=0.6540
+  round 5  time=1.7077s  R2=0.6627
+  round 6  time=1.7093s  R2=0.6282
+  round 7  time=1.7035s  R2=0.6207
+  round 8  time=1.7101s  R2=0.6509
+  round 9  time=1.7084s  R2=0.6545
+
+=== feats10_snr3_N100000 ===
+  round 0  time=16.8055s  R2=0.7406
+  round 1  time=26.1024s  R2=0.7328
+  round 2  time=16.7504s  R2=0.7390
+  round 3  time=23.7874s  R2=0.7371
+  round 4  time=21.4318s  R2=0.7359
+  round 5  time=19.1388s  R2=0.7379
+  round 6  time=19.1620s  R2=0.7377
+  round 7  time=23.7739s  R2=0.7302
+  round 8  time=16.7893s  R2=0.7379
+  round 9  time=16.7709s  R2=0.7318
+
+=== feats10_snr3_N500000 ===
+  round 0  time=188.6008s  R2=0.7465
+  round 1  time=188.6001s  R2=0.7460
+  round 2  time=281.2553s  R2=0.7430
+  round 3  time=212.2373s  R2=0.7464
+  round 4  time=106.9442s  R2=0.7429
+  round 5  time=200.3642s  R2=0.7453
+  round 6  time=142.0809s  R2=0.7481
+  round 7  time=316.2431s  R2=0.7423
+  round 8  time=340.0263s  R2=0.7456
+  round 9  time=281.0801s  R2=0.7446
+
+=== feats20_snr10_N10000 ===
+  round 0  time=1.7056s  R2=0.8262
+  round 1  time=1.7120s  R2=0.8565
+  round 2  time=1.7097s  R2=0.8146
+  round 3  time=1.7117s  R2=0.8448
+  round 4  time=1.9470s  R2=0.8274
+  round 5  time=1.7068s  R2=0.8322
+  round 6  time=1.7104s  R2=0.8432
+  round 7  time=1.7020s  R2=0.8598
+  round 8  time=1.9482s  R2=0.8402
+  round 9  time=1.7214s  R2=0.8517
+
+=== feats20_snr10_N100000 ===
+  round 0  time=16.8173s  R2=0.8914
+  round 1  time=16.8077s  R2=0.8842
+  round 2  time=19.0965s  R2=0.8894
+  round 3  time=19.0862s  R2=0.8897
+  round 4  time=16.8097s  R2=0.8859
+  round 5  time=19.1709s  R2=0.8885
+  round 6  time=19.1771s  R2=0.8903
+  round 7  time=19.1349s  R2=0.8892
+  round 8  time=19.1586s  R2=0.8933
+  round 9  time=16.7911s  R2=0.8898
+
+=== feats20_snr10_N500000 ===
+  round 0  time=107.4075s  R2=0.9041
+  round 1  time=107.2033s  R2=0.9043
+  round 2  time=293.9496s  R2=0.9048
+  round 3  time=246.8654s  R2=0.9034
+  round 4  time=235.3104s  R2=0.9047
+  round 5  time=165.3922s  R2=0.9048
+  round 6  time=107.4437s  R2=0.9033
+  round 7  time=212.6459s  R2=0.9049
+  round 8  time=153.5472s  R2=0.9027
+  round 9  time=119.3194s  R2=0.9016
+
+=== feats20_snr3_N10000 ===
+  round 0  time=1.4726s  R2=0.6155
+  round 1  time=1.7113s  R2=0.6059
+  round 2  time=1.7124s  R2=0.5532
+  round 3  time=1.7162s  R2=0.5540
+  round 4  time=1.4734s  R2=0.6206
+  round 5  time=1.7108s  R2=0.5981
+  round 6  time=1.7109s  R2=0.5533
+  round 7  time=1.7086s  R2=0.5781
+  round 8  time=1.4786s  R2=0.5994
+  round 9  time=1.7136s  R2=0.5057
+
+=== feats20_snr3_N100000 ===
+  round 0  time=16.8273s  R2=0.7029
+  round 1  time=16.7917s  R2=0.7131
+  round 2  time=19.1388s  R2=0.7019
+  round 3  time=16.8141s  R2=0.7141
+  round 4  time=16.8413s  R2=0.7105
+  round 5  time=16.8432s  R2=0.7076
+  round 6  time=16.9167s  R2=0.7133
+  round 7  time=16.8499s  R2=0.7150
+  round 8  time=16.8366s  R2=0.7074
+  round 9  time=16.7905s  R2=0.6892
+
+=== feats20_snr3_N500000 ===
+  round 0  time=165.7631s  R2=0.7388
+  round 1  time=118.8815s  R2=0.7427
+  round 2  time=142.4728s  R2=0.7419
+  round 3  time=212.1304s  R2=0.7370
+  round 4  time=118.8600s  R2=0.7427
+  round 5  time=95.7889s  R2=0.7441
+  round 6  time=107.6743s  R2=0.7393
+  round 7  time=259.7685s  R2=0.7425
+  round 8  time=95.7755s  R2=0.7398
+  round 9  time=119.3282s  R2=0.7445
+
+=== feats5_snr10_N10000 ===
+  round 0  time=1.9504s  R2=0.8994
+  round 1  time=2.9096s  R2=0.8940
+  round 2  time=1.9513s  R2=0.8968
+  round 3  time=1.7197s  R2=0.8918
+  round 4  time=1.9455s  R2=0.8971
+  round 5  time=2.9089s  R2=0.8972
+  round 6  time=2.1963s  R2=0.8989
+  round 7  time=2.8946s  R2=0.8973
+  round 8  time=2.1829s  R2=0.8985
+  round 9  time=1.7106s  R2=0.9026
+
+=== feats5_snr10_N100000 ===
+  round 0  time=37.7935s  R2=0.9070
+  round 1  time=33.1358s  R2=0.9077
+  round 2  time=26.1115s  R2=0.9069
+  round 3  time=23.8382s  R2=0.9073
+  round 4  time=44.7529s  R2=0.9071
+  round 5  time=154.6235s  R2=0.9079
+  round 6  time=75.0783s  R2=0.9081
+  round 7  time=40.1431s  R2=0.9091
+  round 8  time=33.1331s  R2=0.9096
+  round 9  time=21.4739s  R2=0.9079
+
+=== feats5_snr10_N500000 ===
+  round 0  time=107.4330s  R2=0.9088
+  round 1  time=282.2320s  R2=0.9080
+  round 2  time=153.7716s  R2=0.9084
+  round 3  time=142.2509s  R2=0.9085
+  round 4  time=95.5129s  R2=0.9081
+  round 5  time=188.7054s  R2=0.9090
+  round 6  time=188.9769s  R2=0.9084
+  round 7  time=153.8948s  R2=0.9085
+  round 8  time=83.9978s  R2=0.9057
+  round 9  time=130.4810s  R2=0.9089
+
+=== feats5_snr3_N10000 ===
+  round 0  time=1.9438s  R2=0.7418
+  round 1  time=1.7088s  R2=0.7342
+  round 2  time=1.7118s  R2=0.7337
+  round 3  time=1.7151s  R2=0.7345
+  round 4  time=2.1815s  R2=0.7279
+  round 5  time=1.7175s  R2=0.7012
+  round 6  time=1.7089s  R2=0.7334
+  round 7  time=1.4724s  R2=0.7350
+  round 8  time=2.6631s  R2=0.7243
+  round 9  time=1.9451s  R2=0.7342
+
+=== feats5_snr3_N100000 ===
+  round 0  time=19.1598s  R2=0.7496
+  round 1  time=16.8004s  R2=0.7469
+  round 2  time=42.4842s  R2=0.7455
+  round 3  time=21.5017s  R2=0.7433
+  round 4  time=23.7784s  R2=0.7438
+  round 5  time=16.7830s  R2=0.7476
+  round 6  time=16.7677s  R2=0.7424
+  round 7  time=26.1354s  R2=0.7441
+  round 8  time=21.5082s  R2=0.7460
+  round 9  time=19.1258s  R2=0.7447
+
+=== feats5_snr3_N500000 ===
+  round 0  time=212.7018s  R2=0.7481
+  round 1  time=235.6887s  R2=0.7490
+  round 2  time=200.4134s  R2=0.7486
+  round 3  time=201.3602s  R2=0.7481
+  round 4  time=95.6033s  R2=0.7474
+  round 5  time=153.9869s  R2=0.7490
+  round 6  time=118.7246s  R2=0.7475
+  round 7  time=223.9113s  R2=0.7484
+  round 8  time=165.6106s  R2=0.7461
+  round 9  time=386.6600s  R2=0.7491
+
+done. 180 rows -> results_torch_GPU.csv
