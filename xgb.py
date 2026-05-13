@@ -50,21 +50,26 @@ def process(csv_path):
         model.fit(X_tr, y_tr)
         elapsed = time.perf_counter() - t0
 
+        t1 = time.perf_counter()
         pred = model.predict(X_te)
+        infer_time = time.perf_counter() - t1
+
         rows.append({
-            "dataset":     tag,
-            "n_feats":     n_feats,
-            "snr":         snr,
-            "N":           N,
-            "round":       rnd,
-            "method":      "xgboost",
-            "train_time":  elapsed,
-            "adj_r2":      adj_r2(y_te, pred, p),
-            "rmse":        float(mean_squared_error(y_te, pred) ** 0.5),
-            "mae":         float(mean_absolute_error(y_te, pred)),
-            "best_params": "",
+            "dataset":               tag,
+            "n_feats":               n_feats,
+            "snr":                   snr,
+            "N":                     N,
+            "round":                 rnd,
+            "method":                "xgboost",
+            "train_time":            elapsed,
+            "infer_time":            infer_time,
+            "infer_time_per_sample": infer_time / len(X_te),
+            "adj_r2":                adj_r2(y_te, pred, p),
+            "rmse":                  float(mean_squared_error(y_te, pred) ** 0.5),
+            "mae":                   float(mean_absolute_error(y_te, pred)),
+            "best_params":           "",
         })
-        print(f"  round {rnd}  time={elapsed:.2f}s  "
+        print(f"  round {rnd}  time={elapsed:.2f}s  infer={infer_time:.4f}s  "
               f"R2={rows[-1]['adj_r2']:.4f}  RMSE={rows[-1]['rmse']:.4f}  MAE={rows[-1]['mae']:.4f}")
 
     return rows

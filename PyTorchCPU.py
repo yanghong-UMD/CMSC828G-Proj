@@ -96,7 +96,6 @@ def process(csv_path, batch_size):
                 if val_loss < best_val_loss:
                     best_val_loss = val_loss
                     epochs_no_improve = 0
-                    # 可以在这里保存最佳权重，但为了速度，我们直接继续
                 else:
                     epochs_no_improve += 1
                 

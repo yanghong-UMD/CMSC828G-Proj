@@ -80,7 +80,6 @@ def process(csv_path):
         best_val_loss = float('inf')
         epochs_no_improve = 0
         
-        # 核心训练循环
         for epoch in range(MAX_EPOCHS):
             model.train()
 
