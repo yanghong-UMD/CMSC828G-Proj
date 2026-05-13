@@ -32,7 +32,6 @@ class MLP(nn.Module):
     def forward(self, x):
         return self.net(x).squeeze(-1)
 
-# GPU 版标准化：计算均值/方差均在 GPU 上完成
 def gpu_scale(tr, te):
     mean = tr.mean(dim=0)
     std = tr.std(dim=0)
@@ -46,7 +45,6 @@ def adj_r2(y_true, y_pred, p):
 
 def process(csv_path):
     df = pd.read_csv(csv_path)
-    # CPU 预处理：只做必要的转换和 Pin Memory
     X_cpu = torch.from_numpy(df.drop(columns="y").values.astype(np.float32)).pin_memory()
     y_cpu = torch.from_numpy(df["y"].values.astype(np.float32)).pin_memory()
     p = X_cpu.shape[1]
@@ -62,22 +60,18 @@ def process(csv_path):
         idx = np.arange(len(X_cpu))
         tr_idx, te_idx = train_test_split(idx, test_size=0.5, random_state=seed)
         
-        # 异步搬运到 GPU
         X_tr = X_cpu[tr_idx].to(DEVICE, non_blocking=True)
         X_te = X_cpu[te_idx].to(DEVICE, non_blocking=True)
         y_tr = y_cpu[tr_idx].to(DEVICE, non_blocking=True)
         y_te = y_cpu[te_idx].to(DEVICE, non_blocking=True)
 
-        # GPU 负责重计算：标准化
         X_tr, X_te = gpu_scale(X_tr, X_te)
 
-        # 验证集切分 (GPU 上完成)
         val_size = int(len(X_tr) * 0.1)
         X_train, X_val = X_tr[val_size:], X_tr[:val_size]
         y_train, y_val = y_tr[val_size:], y_tr[:val_size]
 
         model = MLP(p).to(DEVICE)
-        # 保持变量一致，不开启 AMP，但使用 Fused Adam (GPU 专供)
         optimizer = torch.optim.Adam(model.parameters(), lr=LR, fused=True)
         loss_fn = nn.MSELoss()
 
